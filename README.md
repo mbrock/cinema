@@ -10,7 +10,7 @@ views. It can also run a `requestAnimationFrame` loop to update your
 
 Example:
 
-```
+```javascript
 var C = Cinema
 var Movie = React.createClass({
   render: function () {
