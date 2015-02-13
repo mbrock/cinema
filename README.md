@@ -1,7 +1,9 @@
 # Cinema of Reactions
 
 Hello! This is a very simple library I made to animate a React view
-based on a timeline. You just pass a *t* parameter down through your
+based on a timeline.
+
+You just pass a *t* parameter down through your
 view hierarchy. The library helps you create and combine *t*-based
 views. It can also run a `requestAnimationFrame` loop to update your
 *t*.
@@ -24,8 +26,8 @@ var m = React.render(<Movie/>, document.body)
 C.play(m, C.scaled(5, C.looped(8, C.seconds)))
 ```
 
-This is a view whose content is determined by a sequence of three
-"scenes". A scene is just a function and a length. The length is
+This is a view whose content is determined by a **sequence** of three
+**scenes**. A scene is just a function and a length. The length is
 relative to the total length of the sequence; here we only say that
 the `"Who's there?"` scene should be twice as long as the others. And
 the functions simply return React views based on their *t* parameter,
